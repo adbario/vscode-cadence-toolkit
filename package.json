@@ -1,0 +1,41 @@
+{
+  "name": "vscode-cadence-toolkit",
+  "displayName": "Cadence Toolkit",
+  "description": "Cadence support for Visual Studio Code",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adbario/vscode-cadence-toolkit.git"
+  },
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cadence",
+        "aliases": [
+          "Cadence",
+          "cadence"
+        ],
+        "extensions": [
+          ".cdc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cadence",
+        "scopeName": "source.cadence",
+        "path": "./syntaxes/cadence.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
